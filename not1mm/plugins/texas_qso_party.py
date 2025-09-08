@@ -17,11 +17,13 @@ columns = [
     "Freq",
     "Snt",
     "Rcv",
-    "SentCounty",
-    "RcvCounty",
+    "SentNr",
+    "NR",
+    "Name",
     "M1",
     "PTS",
 ]
+
 dupe_type = 2  # per band
 
 # List of valid Texas county codes (abbreviated list for brevity)
