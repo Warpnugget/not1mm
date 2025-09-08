@@ -50,6 +50,10 @@ def interface(self):
     self.exch_label.setText("Rcvd Cty/State")
     self.field4.setAccessibleName("Rcvd Exchange")
 
+def reset_label(self):
+    """Reset label after field cleared (required stub)."""
+    pass
+
 def set_tab_next(self):
     self.tab_next = {
         self.callsign: self.other_1,
