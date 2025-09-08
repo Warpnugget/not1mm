@@ -12,16 +12,16 @@ name = "Texas QSO Party"
 cabrillo_name = "TQP"
 mode = "BOTH"  # CW, SSB, Digital
 columns = [
-    "YYYY-MM-DD HH:MM:SS",
+    "YYYY-MM-DD HH:MM:SS",  # TS
     "Call",
     "Freq",
-    "Snt",
-    "Rcv",
-    "SentNr",
-    "NR",
-    "Name",
-    "M1",
-    "PTS",
+    "Snt",                  # Sent RST
+    "Rcv",                  # Received RST
+    "SentNr",               # Sent Serial
+    "NR",                   # Received Serial or Exchange
+    "Name",                 # Name/Exchange
+    "Points",               # QSO Points
+]
 ]
 
 dupe_type = 2  # per band
