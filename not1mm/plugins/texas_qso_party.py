@@ -22,7 +22,6 @@ columns = [
     "Name",                 # Name/Exchange
     "Points",               # QSO Points
 ]
-]
 
 dupe_type = 2  # per band
 
