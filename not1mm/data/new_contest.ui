@@ -494,6 +494,11 @@
      </item>
      <item>
       <property name="text">
+       <string>Texas QSO Party</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
        <string>UKEIDX</string>
       </property>
      </item>
