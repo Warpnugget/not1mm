@@ -10,13 +10,13 @@ name = "Texas QSO Party"
 cabrillo_name = "TEXAS-QSO-PARTY"
 mode = "CW"  # or "BOTH" if SSB is allowed
 columns = [
-    "YYYY-MM-DD HH:MM:SS",  # Timestamp
+    "TS",
     "Call",
     "Freq",
-    "Snt",
-    "Rcv",
+    "SNT",
+    "RCV",
     "SentNr",
-    "NR",                   # Received serial/exchange
+    "NR",
     "Name",
     "Points",
 ]
