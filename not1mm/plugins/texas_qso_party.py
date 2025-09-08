@@ -117,8 +117,16 @@ def show_qso(self):
     return int(result.get("qsos", 0)) if result else 0
 
 def calc_score(self):
+    """Return calculated score safely, even if DB has None values."""
     result = self.database.fetch_points()
-    return int(result.get("Points", 0)) * show_mults(self) if result else 0
+    if not result:
+        return 0
+    points = result.get("Points", 0) or 0
+    try:
+        points = int(points)
+    except (ValueError, TypeError):
+        points = 0
+    return points * show_mults(self)
 
 def adif(self):
     gen_adif(self, cabrillo_name, "TQP")
